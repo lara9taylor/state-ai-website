@@ -1,0 +1,2 @@
+-- This migration has been superseded by 20250502201419_restless_trail.sql
+-- Keeping this file empty to preserve migration history

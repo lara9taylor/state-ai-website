@@ -1,0 +1,82 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply bg-[#5d1725] text-gray-200 font-sans min-h-screen;
+    overflow-x: hidden;
+  }
+}
+
+@layer utilities {
+  .bg-gradient-x {
+    background-image: linear-gradient(90deg, #FDC526, #19FF7F, #FDC526);
+    background-size: 200% auto;
+  }
+
+  .bg-gradient-y {
+    background-image: linear-gradient(90deg, #19FF7F, #FDC526, #19FF7F);
+    background-size: 200% auto;
+  }
+
+  .animate-gradient-x {
+    animation: gradient-x 3s linear infinite;
+  }
+
+  @keyframes gradient-x {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+
+  .animate-fade-in {
+    animation: fadeIn 0.8s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+  }
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(20px) scale(0.95);
+      filter: blur(8px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+      filter: blur(0);
+    }
+  }
+
+  .preserve-3d {
+    transform-style: preserve-3d;
+  }
+
+  .backface-hidden {
+    backface-visibility: hidden;
+  }
+}
+
+@keyframes sparkGlow {
+  0%, 100% {
+    filter: drop-shadow(0 0 35px rgba(253, 197, 38, 0.8)) 
+            drop-shadow(0 0 70px rgba(253, 197, 38, 0.4))
+            drop-shadow(0 0 100px rgba(25, 255, 127, 0.3))
+            brightness(1.3);
+    transform: scale(1.05);
+  }
+  50% {
+    filter: drop-shadow(0 0 20px rgba(253, 197, 38, 0.3))
+            drop-shadow(0 0 40px rgba(253, 197, 38, 0.2))
+            drop-shadow(0 0 60px rgba(25, 255, 127, 0.1))
+            brightness(0.9);
+    transform: scale(0.95);
+  }
+}
+
+.animate-flicker {
+  animation: sparkGlow 4s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}

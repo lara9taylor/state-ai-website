@@ -1,0 +1,21 @@
+{
+  "short_name": "State AI",
+  "name": "State AI Strategies",
+  "description": "Custom AI tools that think like you. AI consulting for nonprofits, educators, and small businesses in Starkville.",
+  "icons": [
+    {
+      "src": "https://letaibe.com/images/letAIbe.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "https://letaibe.com/images/letAIbe.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "start_url": "/",
+  "display": "standalone",
+  "theme_color": "#19FF7F",
+  "background_color": "#5d1725"
+}

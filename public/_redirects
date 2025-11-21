@@ -1,0 +1,6 @@
+# Redirect www to non-www
+http://www.stateaistrategies.com/* https://stateaistrategies.com/:splat 301!
+https://www.stateaistrategies.com/* https://stateaistrategies.com/:splat 301!
+
+# SPA fallback - all other routes go to index.html
+/*    /index.html   200
