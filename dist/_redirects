@@ -1,0 +1,18 @@
+/*    /index.html   200
+
+/*.js     /index.html   200   Content-Type=application/javascript
+/*.css    /index.html   200   Content-Type=text/css
+/*.json   /index.html   200   Content-Type=application/json
+/*.ico    /index.html   200   Content-Type=image/x-icon
+/*.png    /index.html   200   Content-Type=image/png
+/*.svg    /index.html   200   Content-Type=image/svg+xml
+/*.jpg    /index.html   200   Content-Type=image/jpeg
+/*.gif    /index.html   200   Content-Type=image/gif
+/*.woff   /index.html   200   Content-Type=font/woff
+/*.woff2  /index.html   200   Content-Type=font/woff2
+/*.ttf    /index.html   200   Content-Type=font/ttf
+/*.eot    /index.html   200   Content-Type=application/vnd.ms-fontobject
+
+# Redirect www to non-www
+http://www.stateaistrategies.com/* https://stateaistrategies.com/:splat 301!
+https://www.stateaistrategies.com/* https://stateaistrategies.com/:splat 301!

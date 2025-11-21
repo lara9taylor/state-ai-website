@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://www.stateaistrategies.com/sitemap.xml
+
+# Disallow crawling of authentication pages
+Disallow: /auth/callback
